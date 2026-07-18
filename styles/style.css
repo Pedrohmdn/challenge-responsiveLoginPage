@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary-color: #0056fb;
+  --hover-button: #008afb;
+}
+
+a {
+  color: var(--black);
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.4s linear;
+  height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--hover-button);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color: var(--black);
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  height: 50px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+}
+
+input::placeholder {
+  color: var(--black);
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.column {
+  flex: 1;
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem clamp(1rem, 4vw, 2rem);
+}
+
+.column.left {
+  padding-right: 3rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: bold;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.form-button {
+  position: relative;
+}
+
+.form-button::after {
+  content: "";
+  width: 92px;
+  height: 57px;
+  background-image: url("../assets/code.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.5;
+  right: -10%;
+  bottom: -60%;
+  z-index: -1;
+}
+
+.column.right {
+  background-color: var(--primary-color);
+  gap: 2.5rem;
+  color: var(--white);
+  padding-left: 3rem;
+}
+
+.image-container,
+.content-container {
+  max-width: 500px;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.content-container h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 24px;
+}
+
+.content-container p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  line-height: 150%;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .column.right {
+    padding: 3rem 2rem;
+  }
+}
