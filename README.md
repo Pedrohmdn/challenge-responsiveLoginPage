@@ -54,7 +54,7 @@ modulo-5-desafio/
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/modulo-5-desafio.git
+   git clone https://github.com/Pedrohmdn/challenge-responsiveLoginPage.git
    ```
 2. Abra o arquivo `index.html` no navegador.
 
@@ -118,7 +118,7 @@ modulo-5-desafio/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/modulo-5-desafio.git
+   git clone https://github.com/Pedrohmdn/challenge-responsiveLoginPage.git
    ```
 2. Open the `index.html` file in your browser.
 
